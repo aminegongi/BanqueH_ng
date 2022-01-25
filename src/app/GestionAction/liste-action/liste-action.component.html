@@ -1,0 +1,34 @@
+<div style="padding-top: 60px;">
+    <h2>Actions List</h2>
+    <a class="btn btn-sm btn-primary" href="action/add">
+        Add Action
+      </a>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nom</th>
+                <th scope="col">prix Entree</th>
+                <th scope="col">nombre Action</th>
+                <th scope="col">description</th>
+                <th scope="col">date Marche</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let l of listActions">
+                    <td>{{l.id}}</td>
+                    <td>{{l.nom}}</td>
+                    <td>{{l.prixEntree}}</td>
+                    <td>{{l.nombreAction}}</td>
+                    <td>{{l.description}}</td>
+                    <td>{{l.dateMarche}}</td>
+                    <td><button class="btn btn-outline-success" (click)="goToPrix(l.id,l.nom)" >Historique des Valeurs</button></td>
+                    <td><button class="btn btn-outline-secondary" (click)="showAction(l.id)" >Détails</button></td>
+                    </tr>
+            </tbody>
+            </table>
+    </div>
+</div>

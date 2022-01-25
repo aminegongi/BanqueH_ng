@@ -1,0 +1,44 @@
+<div style="padding-top: 60px;">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <h5 class="card-header">Modifier la Valeur - {{ nom }}</h5>
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">TND</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Nouvelle Valeur" [ngModel]="valeur" (change)="setvaleur($event)" id="inputEmail3" placeholder="Valeur">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-success" type="submit" (click)="addValeur()" >Modifier</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <h5 class="card-header">Historique des Valeurs - {{ nom }}</h5>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                <th scope="col">Valeur</th>
+                                <th scope="col">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let l of listPrixAction">
+                                    <td>{{l.prixAct}}</td>
+                                    <td>{{l.dateChangement}}</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
