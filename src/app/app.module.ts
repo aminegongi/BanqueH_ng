@@ -11,6 +11,13 @@ import { ListeActionComponent } from './GestionAction/liste-action/liste-action.
 import { ShowActionComponent } from './GestionAction/show-action/show-action.component';
 import { HeaderComponent } from './header/header.component';
 import { AdPaComponent } from './GestionPrixAction/ad-pa/ad-pa.component';
+import { ListActionsComponent } from './GestionPortefeuille/list-actions/list-actions.component';
+import { MesActionsComponent } from './GestionPortefeuille/mes-actions/mes-actions.component';
+import { DetailsActionsComponent } from './GestionPortefeuille/details-actions/details-actions.component';
+import { AddObligationComponent } from './GestionObligation/add-obligation/add-obligation.component';
+import { ListObligationComponent } from './GestionObligation/list-obligation/list-obligation.component';
+import { EditObligationComponent } from './GestionObligation/edit-obligation/edit-obligation.component';
+import { ShowObligationComponent } from './GestionObligation/show-obligation/show-obligation.component';
 
 
 @NgModule({
@@ -21,7 +28,14 @@ import { AdPaComponent } from './GestionPrixAction/ad-pa/ad-pa.component';
     ListeActionComponent,
     ShowActionComponent,
     HeaderComponent,
-    AdPaComponent
+    AdPaComponent,
+    ListActionsComponent,
+    MesActionsComponent,
+    DetailsActionsComponent,
+    AddObligationComponent,
+    ListObligationComponent,
+    EditObligationComponent,
+    ShowObligationComponent
   ],
   imports: [
     BrowserModule,

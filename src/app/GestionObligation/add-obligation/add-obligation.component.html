@@ -1,0 +1,51 @@
+<div style="padding-top: 60px;">
+    
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Nom</label>
+      <div class="col-sm-10">
+        <input type="text" [ngModel]="nom" (change)="setnom($event)" class="form-control" id="inputEmail3" placeholder="Nom">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Valeur Nominale</label>
+        <div class="col-sm-10">
+          <input type="number" [ngModel]="valeur_nom" (change)="setvaleur_nom($event)" class="form-control" id="inputEmail3" min="0">
+        </div>
+      </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">taux C</label>
+      <div class="col-sm-10">
+        <input type="number" [ngModel]="taux_c" (change)="settaux_c($event)" class="form-control" id="inputEmail3" min="0">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail5" class="col-sm-2 col-form-label">taux R</label>
+        <div class="col-sm-10">
+          <input type="number" [ngModel]="taux_r" (change)="settaux_r($event)" class="form-control" id="inputEmail4" min="0">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">nombre Obligation</label>
+        <div class="col-sm-10">
+          <input type="text" [ngModel]="nombreObligation" (change)="setnombreObligation($event)" class="form-control" id="inputEmail3" placeholder="nombreObligation">
+        </div>
+      </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">nombre Annee</label>
+      <div class="col-sm-10">
+        <input type="text" [ngModel]="nombreAnnee" (change)="setnombreAnnee($event)" class="form-control" id="inputEmail3" placeholder="nombreAnnee">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">description</label>
+      <div class="col-sm-10">
+        <textarea [ngModel]="description" class="form-control" (change)="setdescription($event)" id="inputEmail3" > </textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" (click)="addObligation()" class="btn btn-primary">Add Obligation</button>
+      </div>
+    </div>
+  
+</div>
